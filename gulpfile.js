@@ -1,7 +1,10 @@
-let gulp = require('gulp');
-let sass = require('gulp-sass');
-let cleanCSS = require('gulp-clean-css');
-let server = require('gulp-webserver');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const cleanCSS = require('gulp-clean-css');
+const server = require('gulp-webserver');
+const htmlmin = require('gulp-htmlmin');
+const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('server', function() {
   gulp.src('app')	// <-- your app folder
@@ -20,17 +23,38 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('minify-css', () => {
+gulp.task('image', () =>
+	gulp.src('app/img/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('dist/img'))
+);
+
+gulp.task('css', () => {
   return gulp.src('app/css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('scripts', function() {
+  return gulp.src('app/js/**/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+});
+
+gulp.task('html', () => {
+  return gulp.src('app/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('run', ['sass', 'minify-css']);
+gulp.task('run', ['sass', 'image', 'css', 'scripts', 'html']);
 
 gulp.task('watch', function(){
   gulp.watch('app/sass/*.scss', ['sass']);
-  gulp.watch('app/css/*.css', ['minify-css']);
+  gulp.watch('app/img/*.*', ['image']);
+  gulp.watch('app/css/*.css', ['css']);
+  gulp.watch('app/js/**/*.js', ['scripts']);
+  gulp.watch('app/*.html', ['html']);
 });
 
 gulp.task('default', ['server', 'run', 'watch']);
