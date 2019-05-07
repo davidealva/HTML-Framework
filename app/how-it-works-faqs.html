@@ -1,0 +1,71 @@
+{% set title = "Uledger How It Works FAQs Page" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "partial/_meta.html" %}
+  </head>
+
+  <body data-smooth-scroll-offset="77">
+    {% include "partial/_nav.html" %}
+    <div class="main-container">
+      <section class="cover imagebg text-center height-50" data-overlay="3">
+        <div class="background-image-holder">
+          <img alt="background" src="img/1600x1067_Email.png" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-9 col-lg-8">
+              <h1><strong>FAQs</strong></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature-large bg--secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-md-1">
+              <h4>What problem does ULedger solve?</h4>
+              <p>
+                In today’s digital world, the ability to forge, delete or otherwise manipulate data is omnipresent. Organizations and individuals spend resources to protect and prove the integrity of their data to 3rd parties. ULedger provides trustless, independent certification of data content at a point in time tied to a particular identity. This certification is accomplished via Blockchain, creating an audit trail that can never be changed and the consensus of the truth of the content through multiple versions of the audit trail created among many nodes. ULedger can provide independent validation of the history of an organization’s data over time. We then provide the reporting tools needed to prove the integrity of data to 3rd parties, such as auditors or regulatory compliance agencies and during legal challenges.
+              </p>
+              <h4>How does this add value to an organization?</h4>
+              <p>
+                Any organization facing audit, regulatory compliance requirements, or legal challenges will find the availability of a 3rd party, independent, immutable audit trail to be a vastly easier and cheaper way to prove the integrity and history of their data.
+              </p>
+              <h4>What makes ULedger better than other data-integrity solutions?</h4>
+              <p>
+                Our blockchain implementation creates a highly scalable and immutable audit trail without the need to share your data. Our approach does not require you to trust ULedger with certifying the data as this happens mathematically among our many nodes. ULedger also has a unique approach to Merkle Trees that increases the integrity of data that we certify.
+              </p>
+              <h4>How hard is it to install ULedger?</h4>
+              <p>ULedger is designed to be minimally invasive to an existing IT or security infrastructure. A REST-ful API allows full access to the ULedger network using open standards, allowing for easy integration to existing data-management environments. Will ULedger change my existing technology infrastructure? ULedger requires minimal changes to existing infrastructure.</p>
+              <h4>Does ULedger need access to my data?</h4>
+              <p>No, ULedger does not need access to your data. ULedger’s blockchain is more concerned with the cryptographic signatures of your data. For sensitive data, all a user needs to provide is the cryptographic signature, rather than the data itself. We make use of the metadata for data reporting and research purposes.</p>
+              <h4>What specific regulations does ULedger address?</h4>
+              <p>ULedger will help regulated entities meet many regulatory requirements. In the pharmaceutical space our technology will help meet FDA Data Integrity requirements and Drug Supply Chain Security Act requirements. Within the medical industry, ULedger will assist in meeting HIPAA, data integrity and HHS audit trail requirements. With financial services and fiduciaries (BD/RIA), ULedger will help in meeting many SEC and FINRA requirements: books & records, audit trails and cyber security requirements and best practices. In fact, our technology is perfectly suited for any entity that is regulated and may be audited by a 3rd party.</p>
+              <h4>What does ULedger mean?</h4>
+              <p>The name “ULedger” came about with the idea that YOU (U), whether you are an individual or organization, can have a secure, immutable, audit trail or “ledger” of your digital data. This data can really be anything that is transactional in nature, such as an email, a contract, a will, a journal entry, clinical trial data, supply chain data of a widget, or any data that you may want to be able to prove the activity and integrity of to a 3rd party.</p>
+              <h4>Is ULedger open source?</h4>
+              <p>ULedger is currently not open source. However, we plan on becoming open source in the near future as soon as we reach a critical mass in nodes and adoption.</p>
+              <h4>Does ULedger perform identity authentication?</h4>
+              <p>Yes, ULedger is currently building a proprietary identity authentication tool that will enable our blockchain data certification to become legally binding.</p>
+              <h4>Can data be stored with ULedger?</h4>
+              <p>Yes. In addition to providing an immutable audit trail for your data, ULedger provides an optional archival service, where the data itself is stored in multiple cloud services for redundancy and safety. This data is also attached to our blockchain in order to offer the same data integrity.</p>
+              <h4>If my data is lost, can it be recovered through ULedger?</h4>
+              <p>Yes, if you are storing data via ULedger’s optional data archival service.</p>
+            </div>
+            <div class="col-md-12 text-center margin-top-40">
+              <h4>Want more information on the ULedger Blockchain Platform? Click the link below.</h4>
+              <a class="btn btn--primary type--uppercase" href="#">
+                <span class="btn__text">
+                  Tell Me More
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% include "partial/_footer.html" %}
+    </div>
+    {% include "partial/_scripts.html" %}
+  </body>
+</html>
