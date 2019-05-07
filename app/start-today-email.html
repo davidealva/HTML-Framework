@@ -1,0 +1,128 @@
+{% set title = "Uledger Email Start Today!" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "partial/_meta.html" %}
+  </head>
+
+  <body data-smooth-scroll-offset="77">
+    {% include "partial/_nav.html" %}
+    <div class="main-container">
+      <section class="cover imagebg text-center height-50" data-overlay="5">
+        <div class="background-image-holder">
+          <img alt="background" src="https://picsum.photos/1600/1067/?random" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-9 col-lg-8">
+              <h1><strong>ULEDGER EMAIL</strong></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="switchable feature-large">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <h2>Secure Your Company's Email Communication Today</h2>
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-md-6">
+              <img
+                alt="Image"
+                class=""
+                src="https://picsum.photos/1600/1067/?random"
+              />
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="row">
+                <div>
+                  <p>
+                    For just $2US per user, per month, ULedger Email allows you to create and maintain a complete, immutable history of your organization’s email communications. In addition to maintaining a secure copy of your organization’s email history, a blockchain-based audit trail ensures a complete and accurate record of email traffic over time.
+                  </p>
+                </div>
+                <div class="col-md-12 margin-top-20">
+                  <h4>Uledger Email:</h4>
+                </div>
+                <div class="col">
+                  <ul class="text-bold">
+                    <li>Secure</li>
+                    <li>Scalable</li>
+                    <li>No Data Shared</li>
+                  </ul>
+                </div>
+                <div class="col">
+                    <ul class="text-bold">
+                      <li>Flexible</li>
+                      <li>Cost Effective</li>
+                      <li>Cross-Merkelization</li>
+                    </ul>
+                </div>
+                <div class="margin-top-20">
+                  <p>
+                    No long-term contracts, if you're not happy with ULedger Email's performance, you can cancel at any time.
+                  </p>
+                  <p>
+                    Purchasing is easy. Just click the link below and you'll receive the ULedger Email API, Installation Guide, and contact information if you need help along the way.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="space--xs bg--secondary">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-6">
+              <form class="row">
+                <div class="col-md-6">
+                    <label>First Name:</label>
+                    <input type="text" name="first" placeholder="First Name" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Last Name:</label>
+                    <input type="text" name="last" placeholder="Last Name" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Company:</label>
+                    <input type="text" name="company" placeholder="Company" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Website:</label>
+                    <input type="url" name="website" placeholder="www.yourwebsite.com" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Email Address:</label>
+                    <input type="email" name="email" placeholder="you@something.com" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Confirm Email Address:</label>
+                    <input type="email" name="email" placeholder="you@something.com" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Phone:</label>
+                    <input type="tel" name="phone" placeholder="(123) 456-7890" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Title:</label>
+                    <input type="text" name="title" placeholder="Title" class="validate-required" />
+                </div>
+                <div class="col-md-12">
+                    <label>Message:</label>
+                    <textarea name="message" placeholder="Additional Information" class="validate-required" rows="2"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn--primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% include "partial/_footer.html" %}
+    </div>
+    {% include "partial/_scripts.html" %}
+  </body>
+</html>

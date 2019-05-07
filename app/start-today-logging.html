@@ -1,0 +1,115 @@
+{% set title = "Uledger Logging Start Today!" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "partial/_meta.html" %}
+  </head>
+
+  <body data-smooth-scroll-offset="77">
+    {% include "partial/_nav.html" %}
+    <div class="main-container">
+      <section class="cover imagebg text-center height-50" data-overlay="5">
+        <div class="background-image-holder">
+          <img alt="background" src="img/1600x1067_Logging.png" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-9 col-lg-8">
+              <h1><strong>ULEDGER LOGGING - INTRUSION DETECTION</strong></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="switchable feature-large">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <h2>ULedger For Cybersecurity and Intrusion Detection</h2>
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-md-6">
+              <img
+                alt="Image"
+                class=""
+                src="https://picsum.photos/1600/1067/?random"
+              />
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="row">
+                <div>
+                  <p>
+                    Stop data breaches before they damage your company, your customers, and the future of your business.
+                  </p>
+                  <p>
+                    ULedger gives you a tamper-proof history,  a basis for real-time identification of anomalies, i.e. changes to system logs that may indicate tampering, hacking, or other undesirable behavior.
+                  </p>
+                  <p>
+                    With ULedger Logging, a continual comparison between the existing system logs and the immutable blockchain-based copy is created, identifying any discrepancies between these data stores and issues alerts which allow administrators to investigate the cause and potentially catch a perpetrator in the act.
+                  </p>
+                  <p>
+                    Getting started is easy. With no long-term contracts, if you're not happy with ULedger's performance, you can cancel at any time.
+                  </p>
+                  <p>
+                    Every environment is different and we want to set you up right, click the lick below and we'll contact you right away and help you make data breaches a thing of the past.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="space--xs bg--secondary">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-6">
+              <form class="row">
+                <div class="col-md-6">
+                    <label>First Name:</label>
+                    <input type="text" name="first" placeholder="First Name" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Last Name:</label>
+                    <input type="text" name="last" placeholder="Last Name" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Company:</label>
+                    <input type="text" name="company" placeholder="Company" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Website:</label>
+                    <input type="url" name="website" placeholder="www.yourwebsite.com" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Email Address:</label>
+                    <input type="email" name="email" placeholder="you@something.com" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Confirm Email Address:</label>
+                    <input type="email" name="email" placeholder="you@something.com" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Phone:</label>
+                    <input type="tel" name="phone" placeholder="(123) 456-7890" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                    <label>Title:</label>
+                    <input type="text" name="title" placeholder="Title" class="validate-required" />
+                </div>
+                <div class="col-md-12">
+                    <label>Message:</label>
+                    <textarea name="message" placeholder="Additional Information" class="validate-required" rows="2"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn--primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% include "partial/_footer.html" %}
+    </div>
+    {% include "partial/_scripts.html" %}
+  </body>
+</html>
