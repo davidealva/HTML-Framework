@@ -10,8 +10,21 @@
   width: 100%;
 }
 
+.width-50 {
+  width: 50%;
+}
+
 .btn {
   border-radius: 0px;
+}
+
+.btn--primary:hover {
+  background: #03a85066;
+}
+
+a:hover {
+  color: #03a85066;
+  text-decoration: none;
 }
 
 .text-bold {

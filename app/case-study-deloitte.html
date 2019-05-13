@@ -1,0 +1,80 @@
+{% set title = "Uledger Case Study - Deloitte" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "partial/_meta.html" %}
+  </head>
+
+  <body data-smooth-scroll-offset="77">
+    {% include "partial/_nav.html" %}
+    <div class="main-container">
+      <section class="cover imagebg text-center height-50" data-overlay="5">
+        <div class="background-image-holder">
+          <img alt="background" src="img/1600x1067_How_It_Works.png" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-9 col-lg-8">
+              <div class="cta">
+                <h1><strong>Case Study - Deloitte</strong></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature-large bg--secondary">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <h2>Deloitte uses ULedger Technology to Create Fraud Detection Solution</h2>
+            </div>
+            <div class="col-lg-8 offset-lg-2">
+              <p class="lead">
+                “By relying on ULedger to be our blockchain provider, we made the best decision for our fraud detection product and for our clients. The platform was designed for the enterprise in every way, making it the most suitable for our clients.”
+              </p>
+              <p class="text-right">
+                - Prakash Santhana, Managing Director, Deloitte
+              </p>
+            </div>
+          </div>
+          <div class="row margin-top-40">
+            <div class="col-lg-6">
+              <p>
+                Over the past decade, there has been a significant increase in data security compromises due to malware. These compromises typically start with a phishing attack to gain access to a corporate system, followed by the hacker modifying system parameters to access privileges that lead to unauthorized transactions, loss of data privacy, and massive expense to a corporation’s bottom line.
+              </p>
+              <p>
+                Hackers have gotten extremely sophisticated, building malware that modifies, deletes, or otherwise corrupts log data, preventing standard hacking detection tools from recognizing the suspicious activity. This malware can essentially erase any trace that it leaves behind, leaving Security Information and Event Management (SIEM) platforms virtually useless in detecting this fraud. That is where a blockchain logging system bridges the gap.
+              </p>
+              <p>
+                You see, when data is recorded to a blockchain, it becomes 100% immutable, or unchangeable. Logs can never be erased, and all records are permanent. Furthermore, all data is verified by other repositories on the blockchain, making it completely provable.
+              </p>
+              <p>
+                Deloitte, a leading audit and tax consultancy serving 80% of the Fortune 500, recognized the power of this innate capability of blockchain and knew that it held the key to providing its clients with the cutting-edge fraud detection many were desperate for.
+              </p>
+              <p>
+There are many technologies on the market today that attempt to detect fraud by studying anomalies in behavior patterns, but because mass fraud is typically proceeded by small, normal-looking test transactions, they often fail in the moments that fraud occurs.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Deloitte set out to build a real-time fraud detection capability that captures anomalies in transactions by comparing system logs with an immutable blockchain twin. The moment that a system log doesn’t match its blockchain counterpart, the potential fraud is reported.
+              </p>
+              <p>
+                Unfortunately, many blockchain solutions weren’t up to the task that Deloitte assigned. Most solutions on the market are either public in nature, sharing underlying data with others on the blockchain, or completely private, stunting the blockchain’s ability to verify it’s data with other repositories. ULedger was the only choice for Deloitte because it’s blockchain architecture allows data to be verified externally without being shared, creating a provable record of transactions with the security of a private database.
+              </p>
+              <p>
+                What’s more, Uledger was easy for Deloitte to incorporate into existing data environments because of its open API, and easy to sell to clients, because it never requires access to underlying data and scales infinitely.
+              </p>
+              <p>
+                “By relying on ULedger to be our blockchain provider, we made the best decision for our fraud detection product and for our clients. The platform was designed for the enterprise in every way, making it the most suitable for our clients.”
+              </p>
+              <p>Prakash Santhana, Managing Director, Deloitte</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% include "partial/_footer.html" %}
+    </div>
+    {% include "partial/_scripts.html" %}
+  </body>
+</html>
