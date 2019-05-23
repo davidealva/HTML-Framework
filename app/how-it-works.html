@@ -17,14 +17,21 @@
             <div class="col-md-9 col-lg-8">
               <div class="cta">
                 <h1><strong>How It Works</strong></h1>
-                <a
-                  class="btn btn--primary type--uppercase"
-                  href="https://www.youtube.com/watch?reload=9&v=UzFvHRzVff0"
-                >
-                  <span class="btn__text">
-                    Watch Our Video
-                  </span>
-                </a>
+                <div class="modal-instance">
+                    <a class="btn btn--primary type--uppercase modal-trigger" href="#">
+                        <span class="btn__text">
+                             Watch Video
+                        </span>
+                    </a>
+                    <div class="modal-container">
+                        <div class="modal-content bg-dark" data-width="60%" data-height="60%">
+                            <iframe data-src="https://www.youtube.com/embed/UzFvHRzVff0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <!--end of modal-content-->
+                    </div>
+                    <!--end of modal-container-->
+                </div>
+                <!--end of modal instance-->
               </div>
             </div>
           </div>
@@ -73,13 +80,23 @@
                 </span>
               </a>
             </div>
-            <div class="col-md-4 text-center text-center-xs">
-                <a class="btn btn--primary type--uppercase width-100" href="#">
-                  <span class="btn__text">
-                    Watch the Video
-                  </span>
-                </a>
+            <div class="col-md-4">
+              <div class="modal-instance width-100">
+                  <a class="btn btn--primary type--uppercase modal-trigger width-100" href="#">
+                      <span class="btn__text">
+                           Watch the Video
+                      </span>
+                  </a>
+                  <div class="modal-container">
+                      <div class="modal-content bg-dark" data-width="60%" data-height="60%">
+                          <iframe data-src="https://www.youtube.com/embed/UzFvHRzVff0" allowfullscreen="allowfullscreen"></iframe>
+                      </div>
+                      <!--end of modal-content-->
+                  </div>
+                  <!--end of modal-container-->
               </div>
+              <!--end of modal instance-->
+            </div>
             <div class="col-md-4 text-center text-center-xs">
               <a class="btn btn--primary type--uppercase width-100" href="/downloads/ULedger_Technology_Summary.docx">
                 <span class="btn__text">
@@ -97,7 +114,7 @@
               <img
                 alt="Image"
                 class=""
-                src="https://picsum.photos/1600/1067/?random"
+                src="img/secondary-image_advantages.jpg"
               />
             </div>
             <div class="col-md-6 col-lg-6">
@@ -151,12 +168,15 @@
             </div>
           </div>
           <div class="row justify-content-around">
-            <div class="col-md-10">
-              <img
-                alt="Image"
-                class=""
-                src="https://picsum.photos/1600/1067/?random"
-              />
+            <div class="col-md-12 col-lg-10">
+                <div class="video-cover">
+                    <div class="background-image-holder">
+                        <img alt="image" src="img/1600x1067_Home.png" />
+                    </div>
+                    <div class="video-play-icon"></div>
+                    <iframe data-src="https://www.youtube.com/embed/UzFvHRzVff0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!--end video cover-->
             </div>
           </div>
           <div class="cta cta--horizontal text-center-xs row margin-top-40">
