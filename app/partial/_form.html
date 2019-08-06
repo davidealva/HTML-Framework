@@ -1,0 +1,67 @@
+<div class="col-md-8">
+  <form class="form-email" data-success-redirect="/thank-you.html" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly." >
+    <div class="form-row">
+      <div class="form-group col">
+        <label>First Name:</label>
+        <input type="text" name="first" placeholder="First Name" class="validate-required" />
+      </div>
+      <div class="form-group col">
+        <label>Last Name:</label>
+        <input type="text" name="last" placeholder="Last Name" class="validate-required" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label>Title:</label>
+        <input type="text" name="title" placeholder="Title" class="validate-required" />
+      </div>
+      <div class="form-group col">
+          <label>Company:</label>
+          <input type="text" name="company" placeholder="Company" class="validate-required" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label>Website:</label>
+        <input type="url" name="website" placeholder="www.yourwebsite.com" class="validate-required" />
+      </div>
+      <div class="form-group col">
+          <label>Phone:</label>
+          <input type="tel" name="phone" placeholder="123-456-7890" class="validate-required validate-number-dash" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="you@something.com" class="validate-required validate-email" />
+      </div>
+
+      <div class="form-group col">
+        <label>Confirm Email Address:</label>
+        <input type="email" name="email" placeholder="you@something.com" class="validate-required validate-email" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+          <label>Message:</label>
+          <textarea name="message" placeholder="Additional Information" class="validate-required" rows="2"></textarea>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn--primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script type="text/javascript">
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
+  console.log(name);
+</script>

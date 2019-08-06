@@ -62,49 +62,7 @@
       <section class="space--xs bg--secondary">
         <div class="container">
           <div class="row justify-content-around">
-            <div class="col-md-6">
-              <form class="row">
-                <div class="col-md-6">
-                    <label>First Name:</label>
-                    <input type="text" name="first" placeholder="First Name" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Last Name:</label>
-                    <input type="text" name="last" placeholder="Last Name" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Company:</label>
-                    <input type="text" name="company" placeholder="Company" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Website:</label>
-                    <input type="url" name="website" placeholder="www.yourwebsite.com" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Email Address:</label>
-                    <input type="email" name="email" placeholder="you@something.com" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Confirm Email Address:</label>
-                    <input type="email" name="email" placeholder="you@something.com" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Phone:</label>
-                    <input type="tel" name="phone" placeholder="(123) 456-7890" class="validate-required" />
-                </div>
-                <div class="col-md-6">
-                    <label>Title:</label>
-                    <input type="text" name="title" placeholder="Title" class="validate-required" />
-                </div>
-                <div class="col-md-12">
-                    <label>Message:</label>
-                    <textarea name="message" placeholder="Additional Information" class="validate-required" rows="2"></textarea>
-                </div>
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn--primary">Submit</button>
-                </div>
-              </form>
-            </div>
+            {% include "partial/_form.html" %}
           </div>
         </div>
       </section>

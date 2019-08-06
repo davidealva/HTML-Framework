@@ -1,3 +1,8 @@
+.bar .logo {
+  max-height: 2.75em !important;
+  max-width: none;
+  top: -4px !important; }
+
 .margin-top-40 {
   margin-top: 40px; }
 
@@ -32,3 +37,9 @@ ul {
 .feature h3 {
   font-size: 3vh;
   font-weight: 400; }
+
+.list--hover {
+  list-style: none; }
+
+footer .logo {
+  max-height: 2.75em !important; }
