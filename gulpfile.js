@@ -73,9 +73,14 @@ gulp.task("watch", () => {
   gulp.watch("app/img/*.*", ["image"]);
   gulp.watch("app/css/*.css", ["css"]);
   gulp.watch("app/js/**/*.js", ["scripts"]);
-  gulp.watch("app/*.html", ["templates"]);
-  gulp.watch("app/partial/*.html", ["templates"]);
-  // gulp.watch("app/*.html", function (event) {
+  // gulp.watch("app/*.html", ["templates"]);
+  // gulp.watch("app/partial/*.html", ["templates"]);
+  gulp.watch("app/*.html", function (event) {
+    gulpSequence(["templates"], "html")(function (err) {
+      if (err) console.log(err)
+    })
+  })
+  // gulp.watch("app/partial/.html", function (event) {
   //   gulpSequence(["templates"], "html")(function (err) {
   //     if (err) console.log(err)
   //   })
