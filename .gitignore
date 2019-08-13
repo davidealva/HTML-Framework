@@ -1,3 +1,5 @@
 node_modules/
-
+dist/
+app/mail
+app/.htaccess
 package-lock.json

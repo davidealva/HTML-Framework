@@ -1,7 +1,11 @@
 .bar .logo {
-  max-height: 2.75em !important;
+  max-height: 35px !important;
   max-width: none;
   top: -4px !important;
+}
+
+.menu-horizontal {
+  list-style: none !important;
 }
 
 .margin-top-40 {
@@ -56,4 +60,45 @@ ul {
 
 footer .logo {
   max-height: 2.75em !important;
+}
+
+.social-list {
+  margin-top: 10px !important;
+}
+
+// footer.footer-2 .row:last-child {
+//   margin-top: 0 !important;
+// }
+
+
+@media (max-width: 767px) {
+  .switchable .row>div[class*=col-]:last-child:not(:only-child) {
+    margin: 0px !important;
+  }
+  .logo-contain {
+    text-align: center !important;
+  }
+
+  .btn--primary {
+    margin-top: 20px;
+  }
+  .logo-contain {
+    text-align: center !important;
+  }
+  
+  footer.footer-2 .row:last-child {
+    margin-top: 0 !important;
+  }
+  
+  .footer-nav {
+    margin: 20px 0 !important;
+  }
+
+  footer .text-right {
+    text-align: center !important;
+  }
+
+  footer .email{
+    text-align: center !important;
+  }
 }
